@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "/public/images/logo.png";
 
-export default function Home() {
+export default function Eventos() {
   return (
     <>
       <div className={` absolute top-0 left-0 bg-[url('/images/fondo_a.jpg')] bg-no-repeat bg-cover bg-center inset-0 `} />
@@ -15,24 +15,20 @@ export default function Home() {
             <img className={`  w-32 h-auto mx-auto my-5 `} src={logo.src} alt='' />
             <p className={` font-Inter font-bold uppercase text-4xl text-white tracking-widest `}>Vimerzion</p>
             <p className={` font-Inter font-normal uppercase text-lg text-white tracking-widest `}>Realidad Virtual</p>
-            {/*
 
             <p className={` font-Inter font-light text-lg text-white tracking-widest mt-16 indent-5 hyphens-auto text-left `}>
               Descubre la tecnología Háptica, una experiencia emocionante y revolucionaria que te sumerge en un mundo de sensaciones palpables. Mediante el uso de vibraciones sutiles, movimientos precisos y retroalimentación táctil, esta tecnología te permite sentir y experimentar visualmente cualquier cosa.
             </p>
-            <p className={` font-Inter font-light text-lg text-white tracking-widest mt-5 indent-5 hyphens-auto text-left `}>
+            <p className={` font-Inter font-light text-lg text-white tracking-widest mt-5 mb-16 indent-5 hyphens-auto text-left `}>
               Ya sea que estés explorando un videojuego, un metaverso o incluso participando en un entrenamiento virtual, la tecnología háptica te sumergirá por completo.
             </p>
-            */}
-            <p className={` font-Inter font-light text-3xl text-white text-opacity-70 tracking-widest leading-relaxed mt-16 text-center `}>
-            En Vimerzion, lideramos el futuro de los eventos con experiencias de realidad virtual inmersivas. Ya sea para empresas o eventos particulares, transformamos tus ideas en soluciones innovadoras que cautivan y sorprenden
-</p>
 
-            
-            <p className={` mt-16 flex flex-col md:flex-row items-center justify-center font-Oswald font-medium text-3xl uppercase tracking-tight text-center p-0 m-0 `}>
-              <a href='/eventos' className={`  -mr-[0.81rem] px-10 py-3 inline-block text-black text-opacity-40 hover:text-opacity-80 bg-cyan-400 hover:bg-cyan-100 [clip-path:_polygon(0_0,calc(100%_-_1.62rem)_0,100%_100%,calc(0%_+_1.62rem)_100%)] cursor-pointer transition-all duration-300 ease-in-out `} >Empresas</a>
-              <a href='/eventos' className={`  -ml-[0.81rem] px-10 py-3 inline-block text-white text-opacity-30 hover:text-opacity-100 bg-fuchsia-500 bg-opacity-80 hover:bg-opacity-100 [clip-path:_polygon(0_0,calc(100%_-_1.62rem)_0,100%_100%,calc(0%_+_1.62rem)_100%)] cursor-pointer transition-all duration-300 ease-in-out `} >Particulares</a>
-            </p>
+            <ul className={` flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-center font-Inter font-semibold text-lg uppercase text-white tracking-normal text-center p-0 m-0 `}>
+              <li className={` cursor-pointer border-b-2 border-white border-solid border-opacity-20 hover:border-opacity-100 transition-all duration-300 ease-in-out `} >Catálogo</li>
+              <li className={` cursor-pointer border-b-2 border-white border-solid border-opacity-20 hover:border-opacity-100 transition-all duration-300 ease-in-out `} >Eventos</li>
+              <li className={` cursor-pointer border-b-2 border-white border-solid border-opacity-20 hover:border-opacity-100 transition-all duration-300 ease-in-out `} >Tecnología</li>
+              <li className={` cursor-pointer border-b-2 border-white border-solid border-opacity-20 hover:border-opacity-100 transition-all duration-300 ease-in-out `} >Contacto</li>
+            </ul>
 
           </div>
         </div>

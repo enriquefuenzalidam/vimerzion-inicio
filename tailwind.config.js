@@ -15,7 +15,8 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-          Inter: ['Inter', ...defaultTheme.fontFamily.sans]
+          Inter: ['Inter', ...defaultTheme.fontFamily.sans],
+          Oswald: ['Oswald', ...defaultTheme.fontFamily.sans]
       },
       backdropGrayscale: {
         10: '.1',
