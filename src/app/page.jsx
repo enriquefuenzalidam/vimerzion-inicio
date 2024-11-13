@@ -1,35 +1,39 @@
 import Image from "next/image";
-import logo from "/public/images/logo.jpg";
+import logo from "/public/images/logo.png";
 
 const menuItems = ["Inicio", "Nosotros", "Servicios", "Catálogo", "Contacto"];
 
 
 export default function Home() {
   return (
-    <div>
-      <div className={` absolute top-0 left-0 bg-[url('/images/fondo_a.jpg')] bg-no-repeat bg-cover bg-center w-full h-full `} />
-      <nav className={` relative `}>
-        <ul className={` absolute top-10 left-1/2 -translate-x-1/2 w-min rounded-md bg-[linear-gradient(to_top,#1F1363,_#3A1E96,_#562BC8)] my-10 mx-auto px-10 shadow-lg shadow-[rgba(0,0,0,0.5)] flex flex-row gap-4 justify-between items-center`}>
-          <li
-          className={` w-max whitespace-nowrap flex flex-row items-center pr-10 `}>
-            <img src={logo.src} alt='' className={` inline-block w-20 h-auto `} />
-            <span className={` inline-block uppercase font-bold text-white text-xl `}>Vermizon</span>
-          </li>
-        {menuItems.map((item, index) => (
-      <li key={index}
-        className={` font-Inter cursor-pointer text-white text-opacity-80 hover:text-opacity-100 font-medium `} >
-        {item}
-      </li>
-    ))}
-        </ul>
-      </nav>
-      <main className={` text-center `}>
-        lala
-        sdfasdf
+    <>
+      <main className={` mx-10 `}>
+        <div className={` absolute top-0 left-0 bg-[url('/images/fondo_a.jpg')] bg-no-repeat bg-cover bg-center w-full h-full `} />
+        <div className={` absolute top-0 left-0 backdrop-blur-sm w-full h-full `} />
+        <div className={` absolute top-0 left-0 bg-[linear-gradient(to_top,#1F1363,_#3A1E96,_#562BC8)] opacity-60 backdrop-blur-sm w-full h-full `} />
+
+        <div className={` relative text-center w-full py-16 max-w-5xl mx-auto`}>
+          <img className={` relative w-32 h-auto mx-auto `} src={logo.src} alt='' />
+          <p className={` font-Inter font-bold uppercase text-4xl text-white tracking-widest `}>Vimerzion</p>
+          <p className={` font-Inter font-normal uppercase text-lg text-white tracking-widest `}>Realidad Virtual</p>
+
+          <p className={` font-Inter font-light text-lg text-white tracking-widest mt-16 indent-5 hyphens-auto text-left `}>
+          Descubre la tecnología Háptica, una experiencia emocionante y revolucionaria que te sumerge en un mundo de sensaciones palpables. Mediante el uso de vibraciones sutiles, movimientos precisos y retroalimentación táctil, esta tecnología te permite sentir y experimentar visualmente cualquier cosa.
+          </p>
+          <p className={` font-Inter font-light text-lg text-white tracking-widest mt-5 indent-5 hyphens-auto text-left `}>
+          Ya sea que estés explorando un videojuego, un metaverso o incluso participando en un entrenamiento virtual, la tecnología háptica te sumergirá por completo.
+          </p>
+
+          <ul className={` font-Inter font-semibold text-lg uppercase text-white tracking-normal my-16 text-center  `}>
+            <li className={` inline-block mr-10 `} >Catálogo</li>
+            <li className={` inline-block mr-10 `} >Eventos</li>
+            <li className={` inline-block mr-10 `} >Tecnología</li>
+            <li className={` inline-block `} >Contacto</li>
+          </ul>
+
+        </div>
+
       </main>
-      <footer className={` text-center `}>
-        lala
-      </footer>
-    </div>
+    </>
   );
 }
