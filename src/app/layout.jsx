@@ -24,7 +24,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`  flex m-0 p-0 w-full h-full `}>
+      <head />
+      <body className={` relative m-0 p-10 w-full h-full min-h-screen `}>
         {children}
       </body>
     </html>
