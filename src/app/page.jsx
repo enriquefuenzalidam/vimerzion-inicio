@@ -29,7 +29,8 @@ export default function Home() {
 </p>
 
             
-            <p className={` mt-24 flex flex-row items-center justify-center font-Oswald font-medium text-3xl uppercase tracking-normal text-center p-0 m-0 `} style={{ filter: 'drop-shadow(0 0 0.6rem rgb(255,255,255,0.6))' }}>
+<p className={` mt-24 font-Inter font-bold uppercase text-xl text-white tracking-widest `}>Eventos</p>
+            <p className={` mt-3 flex flex-row items-center justify-center font-Oswald font-medium text-3xl uppercase tracking-normal text-center p-0 m-0 `} style={{ filter: 'drop-shadow(0 0 0.6rem rgb(255,255,255,0.6))' }}>
               <a href='' className={`  -mr-[0.81rem] px-10 py-3 inline-block text-black text-opacity-40 hover:text-opacity-80 bg-cyan-400 hover:bg-cyan-100 [clip-path:_polygon(0_0,calc(100%_-_1.62rem)_0,100%_100%,calc(0%_+_1.62rem)_100%)] cursor-pointer transition-all duration-300 ease-in-out `} >Empresas</a>
               <a href='' className={`  -ml-[0.81rem] px-10 py-3 inline-block text-white text-opacity-50 hover:text-opacity-100 bg-fuchsia-500 bg-opacity-80 hover:bg-opacity-100 [clip-path:_polygon(0_0,calc(100%_-_1.62rem)_0,100%_100%,calc(0%_+_1.62rem)_100%)] cursor-pointer transition-all duration-300 ease-in-out `} >Particulares</a>
             </p>
