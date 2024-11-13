@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head />
-      <body className={` relative m-0 p-10 w-full h-full min-h-screen `}>
+      <body className={` relative m-0 px-16 pt-16 pb-36 w-full h-full min-h-screen `}>
         {children}
       </body>
     </html>
