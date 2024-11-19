@@ -11,7 +11,7 @@ export default function Home() {
       <main className={` relative `}>
 
         <div className={` max-w-4xl mx-auto `}>
-          <div className={` `}>
+          <div className={` text-center `}>
             <img className={`  w-32 h-auto mx-auto mb-5 `} src={logo.src} alt='' />
             <p className={` font-Inter font-bold uppercase text-4xl text-white tracking-widest `}>Vimerzion</p>
             <p className={` font-Inter font-normal uppercase text-lg text-white tracking-widest `}>Realidad Virtual</p>
